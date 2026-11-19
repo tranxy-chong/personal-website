@@ -150,7 +150,7 @@ export function HomePage({
 
             {/* Right Column: Portrait + Interactive "Impact." Silver & Signal-Orange Card */}
             <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 items-stretch">
-              <div className="relative rounded-2xl overflow-hidden border border-[#141414]/15 dark:border-white/15 bg-[#E4E4E7] dark:bg-[#1C1C21] min-h-[300px] sm:min-h-[340px]">
+              <div className="relative rounded-2xl overflow-hidden border border-[#141414]/15 dark:border-white/15 bg-[#E4E4E7] dark:bg-[#1C1C21] h-[300px] sm:h-[310px] lg:h-[320px]">
                 <ResilientImage
                   src={HERO_PORTRAIT_IMAGE}
                   alt="Studio portrait of Tranxy Chong"

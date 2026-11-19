@@ -264,8 +264,9 @@ export function PortfolioChatbot() {
         aria-label={isOpen ? 'Close chat assistant' : 'Open portfolio assistant'}
         color="#F04E00"
         speed="5s"
+        thickness={2}
         className="shadow-lg"
-        innerClassName="py-2.5 px-4 bg-[#141414] dark:bg-[#FAFAF9] text-white dark:text-[#141414] hover:bg-[#F04E00] dark:hover:bg-[#F04E00] dark:hover:text-white transition-colors gap-2.5"
+        innerClassName="py-2.5 pl-2.5 pr-4 bg-[#141414] dark:bg-[#FAFAF9] text-white dark:text-[#141414] hover:bg-[#F04E00] dark:hover:bg-[#F04E00] dark:hover:text-white transition-colors gap-2.5"
       >
         <span className="w-6 h-6 rounded-full bg-silver-brushed text-[#141414] flex items-center justify-center shrink-0">
           {isOpen ? (

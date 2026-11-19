@@ -62,7 +62,7 @@ export function StarBorder({
       >
         {starTracks}
         <span
-          className={`relative z-10 w-full rounded-full inline-flex items-center justify-center ${innerClassName}`}
+          className={`relative z-10 w-full h-full rounded-full inline-flex items-center justify-center ${innerClassName}`}
         >
           {children}
         </span>
@@ -80,7 +80,7 @@ export function StarBorder({
     >
       {starTracks}
       <span
-        className={`relative z-10 w-full rounded-full inline-flex items-center justify-center ${innerClassName}`}
+        className={`relative z-10 w-full h-full rounded-full inline-flex items-center justify-center ${innerClassName}`}
       >
         {children}
       </span>

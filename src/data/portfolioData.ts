@@ -97,7 +97,8 @@ export interface SkillGroup {
   summary: string;
 }
 
-export const HERO_PORTRAIT_IMAGE = '/assets/aistudio/Frame_1_135e7fe7.png';
+export const HERO_PORTRAIT_IMAGE =
+  '/assets/aistudio/Frame_1_135e7fe7.png';
 export const STUDIO_DESK_IMAGE =
   '/src/assets/images/blog_studio_desk_1794967350139.jpg';
 
