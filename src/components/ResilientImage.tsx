@@ -8,6 +8,17 @@ interface ResilientImageProps {
   fallbackTitle?: string;
 }
 
+function resolveAssetUrl(src: string): string {
+  if (!src || /^(https?:|data:|blob:)/.test(src)) {
+    return src;
+  }
+  const base = import.meta.env.BASE_URL || '/';
+  if (src.startsWith('/') && base !== '/') {
+    return `${base.replace(/\/$/, '')}${src}`;
+  }
+  return src;
+}
+
 export function ResilientImage({
   src,
   alt,
@@ -15,6 +26,7 @@ export function ResilientImage({
   fallbackTitle,
 }: ResilientImageProps) {
   const [hasError, setHasError] = useState(false);
+  const resolvedSrc = resolveAssetUrl(src);
 
   if (hasError) {
     return (
@@ -33,7 +45,7 @@ export function ResilientImage({
 
   return (
     <img
-      src={src}
+      src={resolvedSrc}
       alt={alt}
       referrerPolicy="no-referrer"
       onError={() => setHasError(true)}

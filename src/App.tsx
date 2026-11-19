@@ -108,7 +108,7 @@ export default function App() {
 
       {/* Floating navigation & assistant controls */}
       <ScrollToTopButton />
-      <PortfolioChatbot />
+      {import.meta.env.VITE_STATIC_SITE !== 'true' && <PortfolioChatbot />}
     </div>
   );
 }
